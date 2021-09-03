@@ -163,7 +163,7 @@ class _ParseHTTPClient extends http.BaseClient {
           value.toLowerCase() == 'gzip') {
         compressed = true;
       }
-      curlCmd += ' -H \'$name: $value\'';
+      curlCmd += ' -H \'$name:$value\'';
     });
     if (request.method == 'POST' || request.method == 'PUT') {
       if (request is http.Request) {
